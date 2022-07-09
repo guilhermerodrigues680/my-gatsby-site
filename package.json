@@ -11,7 +11,7 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
-    "build:gh-pages": "gatsby build --prefix-paths",
+    "build:gh-pages": "gatsby build --prefix-paths && rm -rf docs && cp -rp public docs",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
